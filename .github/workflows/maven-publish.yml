@@ -41,7 +41,7 @@ jobs:
      steps:
      - name: Build image
        run: |
-         chmod +x dockercmd.sh
+         chmod 777 dockercmd.sh
          echo "permission change"
          "./dockercmd.sh"
          echo "====Build And Deploy successfull.... ====="
