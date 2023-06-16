@@ -29,8 +29,23 @@ jobs:
          "./maveninstall.sh"
          echo "code build Successfull..."
          pwd
-
+#     - name: Archive production artifacts
+#       uses: actions/upload-artifact@v3
+#       with:
+#          name: java-demp
+#          path: target/*.war
      
+  build-docker-image:
+     runs-on: self-hosted
+     needs: build
+     steps:
+     - name: Build image
+       run: |
+         chmod +x dockercmd.sh
+         echo "permission change"
+         "./dockercmd.sh"
+         echo "====Build And Deploy successfull.... ====="
+
      
      
 #       uses: actions/setup-java@v3
