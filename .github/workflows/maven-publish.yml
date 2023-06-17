@@ -38,6 +38,8 @@ jobs:
 #           ./dockercmd.sh
        run: |
           echo "Docker Build"
+          chmod 777 dockercmd.sh
+          ./dockercmd.sh
      
      
 #       uses: actions/setup-java@v3
