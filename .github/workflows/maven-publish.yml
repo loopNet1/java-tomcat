@@ -32,12 +32,9 @@ jobs:
      needs: build
      steps:
      - name: Build image
-       run: |
-         chmod 777 dockercmd.sh
-         echo "permission change"
-         "./dockercmd.sh"
-         echo "Build And Deploy successfull.... ====="
-
+     - run: chmod 777 dockercmd.sh
+     - run: echo "permission change"
+     - run: "./dockercmd.sh"
      
      
 #       uses: actions/setup-java@v3
