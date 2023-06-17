@@ -32,10 +32,12 @@ jobs:
      needs: build
      steps:
      - name: Build image
+#        run: |
+#           chmod 777 dockercmd.sh
+#           echo "permission change"
+#           ./dockercmd.sh
        run: |
-          chmod 777 dockercmd.sh
-          echo "permission change"
-          ./dockercmd.sh
+          echo "Docker Build"
      
      
 #       uses: actions/setup-java@v3
