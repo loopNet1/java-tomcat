@@ -31,10 +31,11 @@ jobs:
      runs-on: self-hosted
      needs: build
      steps:
-       - name: Build image
-       - run: chmod 777 dockercmd.sh
-       - run: echo "permission change"
-       - run: ./dockercmd.sh
+     - name: Build image
+       run: |
+          chmod 777 dockercmd.sh
+          echo "permission change"
+          ./dockercmd.sh
      
      
 #       uses: actions/setup-java@v3
