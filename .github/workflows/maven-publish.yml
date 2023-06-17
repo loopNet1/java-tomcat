@@ -36,7 +36,7 @@ jobs:
          chmod 777 dockercmd.sh
          echo "permission change"
          "./dockercmd.sh"
-         echo "====Build And Deploy successfull.... ====="
+         echo "Build And Deploy successfull.... ====="
 
      
      
