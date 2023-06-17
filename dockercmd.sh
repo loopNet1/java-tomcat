@@ -1,5 +1,4 @@
-sudo docker info                 
-sudo docker build -t fineshift_emp .  # Build docker image frm dockerfile
-sudo docker run -itd -p 8080:8080  --name fineshift_emp_info fineshift_emp   #create container using docker image 
-sudo docker ps 
-sudo docker inspect fineshift_emp_info  # getting info about container     
+docker build -t fineshift_emp .  # Build docker image frm dockerfile
+docker run -itd -p 8080:8080  --name fineshift_emp_info fineshift_emp   #create container using docker image 
+docker ps 
+docker inspect fineshift_emp_info  # getting info about container     
