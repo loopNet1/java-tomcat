@@ -27,8 +27,8 @@ jobs:
 #         java-version: '11'
 #         distribution: 'temurin'
 #         cache: maven
-    - run: ls
-    - run: ./mavenisntall.sh
+      run: ls
+      #run: ./mavenisntall.sh
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
