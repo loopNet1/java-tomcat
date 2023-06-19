@@ -14,7 +14,7 @@ jobs:
       run: |
         pwd
         ls
-        bash  maveninstall.sh
+        ls java-tomcat
 #         echo "change permission ======="
  #        sudo chmod 777 maveninstall.sh
  #        echo "==== Project Building Started ====="
