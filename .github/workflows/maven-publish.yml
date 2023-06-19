@@ -12,12 +12,14 @@ jobs:
     steps: 
     - name: Set up JDK 11
       run: |
-         echo "change permission ======="
-         sudo chmod 777 maveninstall.sh
-         echo "==== Project Building Started ====="
-         "bash maveninstall.sh"
-         echo "code build Successfull..."
-         pwd
+        pwd
+        ls
+#         echo "change permission ======="
+ #        sudo chmod 777 maveninstall.sh
+ #        echo "==== Project Building Started ====="
+ #        "bash maveninstall.sh"
+ #        echo "code build Successfull..."
+ #        pwd
 #     - name: Archive production artifacts
 #       uses: actions/upload-artifact@v3
 #       with:
