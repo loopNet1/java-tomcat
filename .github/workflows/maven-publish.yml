@@ -15,7 +15,7 @@ jobs:
          echo "change permission ======="
          chmod 777 maveninstall.sh
          echo "==== Project Building Started ====="
-         "./maveninstall.sh"
+         "bash maveninstall.sh"
          echo "code build Successfull..."
          pwd
 #     - name: Archive production artifacts
