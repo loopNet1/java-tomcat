@@ -48,5 +48,5 @@ jobs:
     - name: Building Docker Image
 
       run:
-        docker ps
+        sudo docker ps
    
