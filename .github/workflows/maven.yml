@@ -47,6 +47,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Building Docker Image
 
-      run:
-        ./dockercmd.sh
+      run: |
+        sudo docker build -t omkarphadtare321/java-tom .  # Build docker image frm dockerfile
+        sudo docker run -itd -p 8080:8080  --name java-project omkarphadtare321/java-tom  #create container using docker image 
+        sudo docker ps 
    
