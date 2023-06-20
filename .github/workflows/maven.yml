@@ -27,7 +27,7 @@ jobs:
 #         java-version: '11'
 #         distribution: 'temurin'
 #         cache: maven
-      run: | 
+      run: 
         ls
         ./maveninstall.sh
         ls target
