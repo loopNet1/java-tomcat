@@ -46,10 +46,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Building Docker Image
-
-      run:  |
-        ls
-        pwd
+      run:  sudo docker build -t omkarphadtare321/java-tom .
         
        # sudo docker build -t omkarphadtare321/java-tom .  # Build docker image frm dockerfile
        # sudo docker run -itd -p 8080:8080  --name java-project omkarphadtare321/java-tom  #create container using docker image 
