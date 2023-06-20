@@ -31,13 +31,13 @@ jobs:
       #run: ./mavenisntall.sh
 #     - name: Build with Maven
 #       run: mvn -B package 
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.1.1
-      with:
-    # Artifact name
-        name: mvn-build-artifact
-    # Destination path
-        path: target/studentapp-2.2-SNAPSHOT.war.war
+#     - name: Download a Build Artifact
+#       uses: actions/download-artifact@v2.1.1
+#       with:
+#     # Artifact name
+#         name: mvn-build-artifact
+#     # Destination path
+#         path: target/studentapp-2.2-SNAPSHOT.war.war
     
   Build-docer-image:
 
