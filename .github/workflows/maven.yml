@@ -25,7 +25,7 @@ jobs:
 #         cache: maven
     - name: Maven-Build     
       run: |
-        sudo -A ./maveninstall.sh
+        sudo ./maveninstall.sh
         ls target
       #run: ./mavenisntall.sh
 #     - name: Build with Maven
@@ -47,5 +47,5 @@ jobs:
     - name: Building Docker Image
 
       run: |
-        sudo -A bash dockercmd.sh
+        sudo ./dockercmd.sh
    
