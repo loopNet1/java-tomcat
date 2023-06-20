@@ -48,6 +48,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Building Docker Image
 
-      run: |
-        sudo ./dockercmd.sh
+      run:
+        ./dockercmd.sh
    
