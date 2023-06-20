@@ -37,7 +37,7 @@ jobs:
     # Artifact name
         name: mvn-build-artifact
     # Destination path
-        path: target/*.war
+        path: target/studentapp-2.2-SNAPSHOT.war.war
     
   Build-docer-image:
 
@@ -48,6 +48,5 @@ jobs:
     - name: Building Docker Image
 
       run: |
-        chmod +x dockercmd.sh
         bash dockercmd.sh
    
