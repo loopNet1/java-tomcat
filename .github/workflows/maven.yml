@@ -28,12 +28,20 @@ jobs:
 #         distribution: 'temurin'
 #         cache: maven
       run: 
-        ls
+        chmod +x maveninstall.sh
         ./maveninstall.sh
         ls target
       #run: ./mavenisntall.sh
 #     - name: Build with Maven
 #       run: mvn -B package 
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.1.1
+      with:
+    # Artifact name
+        name: mvn-build-artifact
+    # Destination path
+        path: target/*.war
+    
   Build-docer-image:
 
     runs-on: self-hosted
